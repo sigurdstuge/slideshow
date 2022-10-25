@@ -1,0 +1,46 @@
+
+.header {
+	padding: 2rem;
+	background-color: rosybrown;
+}
+
+.header__navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__list {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.header__list li {
+	transition: all 0.3s;
+}
+
+.header__list li:hover {
+	color: pink;
+}
+
+.header__logo, 
+.header__button {
+	width: 5rem;
+	height: 5rem;
+	
+}
+
+.header__logo img,
+.header__button img {
+	width: 100%;
+	height: auto;
+}
+
+.header__button {
+	border: none;
+	background-color: inherit;
+	cursor: pointer;
+}
