@@ -29,6 +29,7 @@ object-fit: contain;
 	position: absolute;
 	top: 50%;
 	z-index: 10;
+	transform: translateY(-50%); 
 	font-size: 3rem;
 	cursor: pointer;
 }
