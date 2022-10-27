@@ -1,5 +1,4 @@
 .slideshow {
-	background-color: aqua;
 	width: 80vw;
 	height: 80vh;
 	margin: 0 auto;
@@ -10,6 +9,8 @@
 	position: absolute;
 	left: 0;
 	top: 0;
+	width: 100%;
+	height: 100%;
 	display: none;
 }
 
@@ -18,20 +19,20 @@
 }
 
 .slideshow__slide img{
-width: 90%;
-height: 90%;
+width: 100%;
+height: 100%;
 object-fit: contain;
 }
 
 .slideshow__button-left,
 .slideshow__button-right {
-	background-color: blue;
 	position: absolute;
 	top: 50%;
 	z-index: 10;
 	transform: translateY(-50%); /*sentrering*/
 	font-size: 3rem;
 	cursor: pointer;
+	transition: all .3s;
 }
 
 .slideshow__button-left {
@@ -44,5 +45,5 @@ object-fit: contain;
 
 .slideshow__button-left:active,
 .slideshow__button-right:active {
-	transform: scale(0.5);
+	transform: scale(0.8) translateY(-50%);
 }
