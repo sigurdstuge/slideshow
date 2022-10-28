@@ -52,7 +52,8 @@ object-fit: contain;
 .slideshow__dots {
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+ 	left: 50%;
+	transform: translateX(-50%);
 }
 
 .slideshow__dot {
@@ -61,4 +62,10 @@ object-fit: contain;
 	border-radius: 3rem;
 	border: none;
 	cursor: pointer;
+	transition: all .3s;
+}
+
+.slideshow__dot:active,
+.slideshow__dot:hover {
+	background-color: black;
 }
